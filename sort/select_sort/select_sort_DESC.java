@@ -3,11 +3,11 @@ package select_sort;
 public class select_sort_DESC {
 	public static void main(String[] args) {
 		int[] arr_1 = {2,10,8,6,7,3,17,1,0};
-		selectionSort(arr_1,arr_1.length);
+		selectionSortDesc(arr_1,arr_1.length);
 	}
 	
-	public static void selectionSort(int[] list, int n) {	//n : list의 크기
-		System.out.println("정렬 전 ==============");
+	public static void selectionSortDesc(int[] list, int n) {	//n : list의 크기
+		System.out.println(" 정렬 전 ==============");
 		print(list,n);
 		
 		int max =0;
@@ -22,7 +22,7 @@ public class select_sort_DESC {
 			SWAP(list,i,max);
 		}
 		
-		System.out.println("정렬 후 ==============");
+		System.out.println(" 정렬 후 ==============");
 		print(list,n);
 		
 	}

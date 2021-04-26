@@ -1,12 +1,12 @@
 package insertion_sort;
 
-public class insertion_sort_ASC {
+public class insertion_sort_DESC {
 	public static void main(String[] args) {
 		int[] arr_1 = {2,10,8,6,7,3,17,1,0};
-		insertionSort(arr_1,arr_1.length);
+		insertionSortDesc(arr_1,arr_1.length);
 	}
 	
-	public static void insertionSort(int[] list,int n) {	//n : list의 크기
+	public static void insertionSortDesc(int[] list,int n) {	//n : list의 크기
 		System.out.println(" 정렬 전 ==============");
 		print(list,n);
 		
@@ -16,7 +16,7 @@ public class insertion_sort_ASC {
 		
 		for(i =1;i<n;i++) {
 			key = list[i];
-			for(j = i-1;j>=0 && list[j]>key;j--) {
+			for(j = i-1;j>=0 && list[j]<key;j--) {
 				list[j+1] = list[j];
 			}
 			list[j+1] = key;

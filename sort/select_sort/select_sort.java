@@ -7,7 +7,7 @@ public class select_sort {
 	}
 	
 	public static void selectionSort(int[] list, int n) {	//n : list의 크기
-		System.out.println("정렬 전 ==============");
+		System.out.println(" 정렬 전 ==============");
 		print(list,n);
 		
 		int least =0;
@@ -22,7 +22,7 @@ public class select_sort {
 			SWAP(list,i,least);
 		}
 		
-		System.out.println("정렬 후 ==============");
+		System.out.println(" 정렬 후 ==============");
 		print(list,n);
 		
 	}
