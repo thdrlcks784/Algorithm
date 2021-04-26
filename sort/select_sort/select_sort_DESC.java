@@ -1,6 +1,6 @@
 package select_sort;
 
-public class select_sort {
+public class select_sort_DESC {
 	public static void main(String[] args) {
 		int[] arr_1 = {2,10,8,6,7,3,17,1,0};
 		selectionSort(arr_1,arr_1.length);
@@ -10,16 +10,16 @@ public class select_sort {
 		System.out.println("정렬 전 ==============");
 		print(list,n);
 		
-		int least =0;
+		int max =0;
 	
 		for(int i =0;i<n-1;i++) {
-			least = i;
+			max = i;
 			for(int j = i+1;j<n;j++) {
-				if(list[least]>list[j]) {
-					least = j;
+				if(list[max]<list[j]) {
+					max = j;
 				}
 			}
-			SWAP(list,i,least);
+			SWAP(list,i,max);
 		}
 		
 		System.out.println("정렬 후 ==============");
@@ -27,9 +27,9 @@ public class select_sort {
 		
 	}
 	
-	public static void SWAP(int[] list, int curIndex, int leastIndex) {
-		int temp = list[leastIndex];
-		list[leastIndex] = list[curIndex];
+	public static void SWAP(int[] list, int curIndex, int maxIndex) {
+		int temp = list[maxIndex];
+		list[maxIndex] = list[curIndex];
 		list[curIndex] = temp;
 	}
 	
@@ -40,5 +40,5 @@ public class select_sort {
 		}
 		System.out.println(" ]");
 	}
-}
 
+}
