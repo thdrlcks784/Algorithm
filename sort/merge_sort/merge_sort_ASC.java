@@ -23,7 +23,7 @@ public class merge_sort_ASC {
 			int q = mid+1;
 			int index = p;
 			while(p<=mid||q<=end) {
-				if(q>end||(p<=mid&&list[p]<=list[q])) {
+				if(q>end||(p<=mid&&list[p]<=list[q])) {	
 					temp[index++] = list[p++];
 				}
 				else {
