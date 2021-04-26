@@ -1,14 +1,23 @@
 package insertion_sort;
 
+import data_set.data;
+
 public class insertion_sort_ASC {
 	public static void main(String[] args) {
-		int[] arr_1 = {2,10,8,6,7,3,17,1,0};
+		int[] arr_1 = data.getArr(60000);
+		
+		double start = System.nanoTime();
+
 		insertionSort(arr_1,arr_1.length);
+		
+		double end = System.nanoTime();
+		System.out.println("ìˆ˜í–‰ ì‹œê°„ : " + (end-start)/1000000 + "ms");
+		
 	}
 	
-	public static void insertionSort(int[] list,int n) {	//n : listÀÇ Å©±â
-		System.out.println(" Á¤·Ä Àü ==============");
-		print(list,n);
+	public static void insertionSort(int[] list,int n) {	//n : listï¿½ï¿½ Å©ï¿½ï¿½
+		//System.out.println("ì •ë ¬ ì „ ==============");
+		//print(list,n);
 		
 		int key;
 		int i;
@@ -23,8 +32,8 @@ public class insertion_sort_ASC {
 		}
 		
 		
-		System.out.println(" Á¤·Ä ÈÄ ==============");
-		print(list,n);
+		//System.out.println("ì •ë ¬ í›„ ==============");
+		//print(list,n);
 	}
 
 	public static void print(int[] list,int n) {

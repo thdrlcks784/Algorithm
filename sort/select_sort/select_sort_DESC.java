@@ -1,13 +1,20 @@
 package select_sort;
 
+import data_set.data;
+
 public class select_sort_DESC {
 	public static void main(String[] args) {
-		int[] arr_1 = {2,10,8,6,7,3,17,1,0};
+		int[] arr_1 = data.getArr(100000);
+		double start = System.nanoTime();
+
 		selectionSortDesc(arr_1,arr_1.length);
+		
+		double end = System.nanoTime();
+		System.out.println("ìˆ˜í–‰ ì‹œê°„ : " + (end-start)/1000000 + "ms");	
 	}
 	
-	public static void selectionSortDesc(int[] list, int n) {	//n : listÀÇ Å©±â
-		System.out.println(" Á¤·Ä Àü ==============");
+	public static void selectionSortDesc(int[] list, int n) {	//n : listï¿½ï¿½ Å©ï¿½ï¿½
+		System.out.println(" ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ==============");
 		print(list,n);
 		
 		int max =0;
@@ -22,7 +29,7 @@ public class select_sort_DESC {
 			SWAP(list,i,max);
 		}
 		
-		System.out.println(" Á¤·Ä ÈÄ ==============");
+		System.out.println(" ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ==============");
 		print(list,n);
 		
 	}

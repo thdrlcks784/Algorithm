@@ -1,14 +1,23 @@
 package bubble_sort;
 
+import data_set.data;
+
 public class bubble_sort_ASC {
 	public static void main(String[] args) {
-		int[] arr_1 = {2,10,8,6,7,3,17,1,0};
+		
+		int[] arr_1 = data.getArr(60000);
+	
+		double start = System.nanoTime();
+	
 		bubbleSortAsc(arr_1,arr_1.length);
+		
+		double end = System.nanoTime();
+		System.out.println("수행 시간 : " + (end-start)/1000000 + "ms");
 	}
 	
 	public static void bubbleSortAsc(int[] list, int n) { //n : list's size;
-		System.out.println(" 정렬 전 ==============");
-		print(list,n);
+		//System.out.println(" 정렬 전 ==============");
+		//print(list,n);
 		
 		
 		for(int i =n-1;i>0;i--) {
@@ -19,8 +28,8 @@ public class bubble_sort_ASC {
 			}
 		}
 		
-		System.out.println(" 정렬 후 ==============");
-		print(list,n);
+		//System.out.println(" 정렬 후 ==============");
+		//print(list,n);
 	}
 	
 	public static void SWAP(int[] list,int least,int biggest) {

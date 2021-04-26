@@ -1,14 +1,22 @@
 package select_sort;
 
-public class select_sort {
+import data_set.data;
+
+public class select_sort_ASC {
 	public static void main(String[] args) {
-		int[] arr_1 = {2,10,8,6,7,3,17,1,0};
+		int[] arr_1 = data.getArr(100000);
+		double start = System.nanoTime();
+
 		selectionSort(arr_1,arr_1.length);
+		
+		double end = System.nanoTime();
+		System.out.println("ìˆ˜í–‰ ì‹œê°„ : " + (end-start)/1000000 + "ms");	
+
 	}
 	
-	public static void selectionSort(int[] list, int n) {	//n : listÀÇ Å©±â
-		System.out.println(" Á¤·Ä Àü ==============");
-		print(list,n);
+	public static void selectionSort(int[] list, int n) {	//n : list í¬ê¸°
+		//System.out.println("ì •ë ¬ ì „ ==============");
+		//print(list,n);
 		
 		int least =0;
 	
@@ -22,8 +30,8 @@ public class select_sort {
 			SWAP(list,i,least);
 		}
 		
-		System.out.println(" Á¤·Ä ÈÄ ==============");
-		print(list,n);
+		//System.out.println("ì •ë ¬ í›„ ==============");
+		//print(list,n);
 		
 	}
 	

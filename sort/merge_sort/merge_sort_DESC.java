@@ -1,15 +1,17 @@
 package merge_sort;
 
+import data_set.data;
+
 public class merge_sort_DESC {
 	public static void main(String[] args) {
-		int[] arr_1 = new int[]{2,10,8,6,7,3,17,1,0};
+		int[] arr_1 = data.getArr(100000000);
 		int[] tempArr_1 = new int[arr_1.length];
-		System.out.println("정렬전 ==================");
-		print(arr_1,arr_1.length);
+		double start = System.nanoTime();
+
 		mergeSortDesc(arr_1,tempArr_1,0,arr_1.length-1);
-		System.out.println("정렬후 ==================");
-		print(arr_1,arr_1.length);
 		
+		double end = System.nanoTime();
+		System.out.println("수행 시간 : " + (end-start)/1000000 + "ms");		
 	}
 	
 	public static void mergeSortDesc(int[] list, int[] temp,int start, int end) {

@@ -1,14 +1,22 @@
 package insertion_sort;
 
+import data_set.data;
+
 public class insertion_sort_DESC {
 	public static void main(String[] args) {
-		int[] arr_1 = {2,10,8,6,7,3,17,1,0};
+		int[] arr_1 = data.getArr(60000);
+		
+		double start = System.nanoTime();
+
 		insertionSortDesc(arr_1,arr_1.length);
+		
+		double end = System.nanoTime();
+		System.out.println("수행 시간 : " + (end-start)/1000000 + "ms");
 	}
 	
 	public static void insertionSortDesc(int[] list,int n) {	//n : list�� ũ��
-		System.out.println(" ��� �� ==============");
-		print(list,n);
+		//System.out.println(" ��� �� ==============");
+		//print(list,n);
 		
 		int key;
 		int i;
@@ -23,8 +31,8 @@ public class insertion_sort_DESC {
 		}
 		
 		
-		System.out.println(" ���� �� ==============");
-		print(list,n);
+		//System.out.println(" ���� �� ==============");
+		//print(list,n);
 	}
 
 	public static void print(int[] list,int n) {
