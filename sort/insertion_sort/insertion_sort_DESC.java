@@ -6,8 +6,8 @@ public class insertion_sort_DESC {
 		insertionSortDesc(arr_1,arr_1.length);
 	}
 	
-	public static void insertionSortDesc(int[] list,int n) {	//n : listÀÇ Å©±â
-		System.out.println(" Á¤·Ä Àü ==============");
+	public static void insertionSortDesc(int[] list,int n) {	//n : listï¿½ï¿½ Å©ï¿½ï¿½
+		System.out.println(" ï¿½ï¿½ï¿½ ï¿½ï¿½ ==============");
 		print(list,n);
 		
 		int key;
@@ -23,7 +23,7 @@ public class insertion_sort_DESC {
 		}
 		
 		
-		System.out.println(" Á¤·Ä ÈÄ ==============");
+		System.out.println(" ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ==============");
 		print(list,n);
 	}
 
