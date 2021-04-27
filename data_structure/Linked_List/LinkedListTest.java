@@ -12,6 +12,9 @@ public class LinkedListTest {
 		//검색
 		System.out.println(linkedList.searchNode("test").getData());
 		
+		//가장 끝
+		System.out.println(linkedList.searchNode().getData());
+		
 		//삭제
 		System.out.println("삭제전");
 		linkedList.printList();

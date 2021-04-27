@@ -5,7 +5,7 @@ import data_set.data;
 public class bubble_sort_ASC {
 	public static void main(String[] args) {
 		
-		int[] arr_1 = data.getArr(60000);
+		int[] arr_1 = data.getArr(100000000);
 	
 		double start = System.nanoTime();
 	

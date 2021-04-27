@@ -54,7 +54,7 @@ public class LinkedList {
 			}
 		}
 	}
-	
+	//마지막 삭제
 	public void deleteNode() {
 		Node preNode;
 		Node tempNode;
@@ -78,7 +78,7 @@ public class LinkedList {
 			preNode.next = null;
 		}
 	}
-	
+	//중간 탐색
 	public Node searchNode(Object data) {
 		Node tempNode = this.head;
 		
@@ -91,6 +91,22 @@ public class LinkedList {
 			}
 		}
 		return tempNode;
+	}
+	//마지막 탐색
+	public Node searchNode() {
+		Node preNode = this.head;
+		Node tempNode = this.head;
+		if(preNode != null) {
+			tempNode = preNode.next;
+		}
+		if(tempNode==null) {
+			return preNode;
+		}
+		while(tempNode != null) {
+			preNode = tempNode;
+			tempNode = tempNode.next;
+		}
+		return preNode;
 	}
 	
 	public void reverseList() {
@@ -105,6 +121,16 @@ public class LinkedList {
 			curNode.next = preNode;
 		}
 		head = curNode;
+	}
+	
+	public int size() {
+		Node tempNode = head;
+		int size = 0;
+		while(tempNode != null) {
+			tempNode = tempNode.next;
+			size++;
+		}
+		return size;
 	}
 	
 	public void printList() {
