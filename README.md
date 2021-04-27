@@ -15,3 +15,4 @@
   * [Linked List](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Linked_List)
   * [Stack](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Stack)
   * [Queue](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Queue)
+  * [Heap](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Heap)
