@@ -8,6 +8,8 @@ public class LinkedListTest {
 		linkedList.insertNode("ddee");
 		linkedList.insertNode('c');
 		linkedList.insertNode(true);
+		linkedList.firstDeleteNode();
+		linkedList.printList();
 		
 		//검색
 		System.out.println(linkedList.searchNode("test").getData());

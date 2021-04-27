@@ -26,6 +26,15 @@ public class LinkedList {
 			tempNode.next = newNode;
 		}
 	}
+	
+	//처음값 삭제
+	public void firstDeleteNode() {
+		if(head==null) {return;}
+		Node preNode = head;
+		head = preNode.next;
+		preNode.next = null;
+	}
+	
 	//중간 삭제
 	public void deleteNode(Object data) {
 		Node preNode = head;
@@ -77,6 +86,11 @@ public class LinkedList {
 			
 			preNode.next = null;
 		}
+	}
+	
+	//처음값 탐색
+	public Node firstSearchNode() {
+		return head;
 	}
 	//중간 탐색
 	public Node searchNode(Object data) {
