@@ -13,3 +13,4 @@
   * [퀵 정렬](https://github.com/thdrlcks784/Algorithm/tree/main/sort/quick_sort)(quick sort)  
 # [data structure](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure)  
   * [Linked List](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Linked_List)
+  * [Stack](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Stack)
