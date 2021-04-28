@@ -6,6 +6,9 @@ public class HeapTest {
 		
 		Heap<Integer> heap = new Heap<>();
 		
+		
+		
+		
 		Random rnd = new Random();
 		
 		for(int i = 0; i < 15; i++) {
