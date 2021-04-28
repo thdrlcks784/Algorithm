@@ -1,7 +1,7 @@
 공부했던것들 차근차근 정리중...        
 ---------------------------------------
-> ### Commit convention rule : [Algorithm/대주제] 소주제 / (add/modify/delete) / 내용
-> ex) [Algorithm/sort] bubble sort / add / 최초생성
+> ### Commit convention rule : / 대주제 / 중주제 / 소주제1 / 소주제2... / (add/modify/delete) / 내용
+> ex) / Algorithm / DataStucture / PriorityQueue / README / add / 최소생성
 --------------------------------------- 
 
   
@@ -16,3 +16,4 @@
   * [Stack](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Stack)
   * [Queue](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Queue)
   * [Heap](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Heap)
+  * [PriorityQueue](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Priority_Queue)
