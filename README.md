@@ -1,7 +1,7 @@
 공부했던것들 차근차근 정리중...        
 ---------------------------------------
 > ### Commit convention rule : / 대주제 / 중주제 / 소주제1 / 소주제2... / (add/modify/delete) / 내용
-> ex) / Algorithm / DataStucture / PriorityQueue / README / add / 최소생성
+> ex) / Algorithm / DataStructure / PriorityQueue / README / add / 최소생성
 --------------------------------------- 
 
   
