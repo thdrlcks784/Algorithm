@@ -18,3 +18,5 @@
   * [Heap](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Heap)
   * [PriorityQueue](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Priority_Queue)
   * [Tree](https://github.com/thdrlcks784/Algorithm/tree/main/data_structure/Tree)
+# [Search](https://github.com/thdrlcks784/Algorithm/tree/main/Search)
+  * [DFS](https://github.com/thdrlcks784/Algorithm/tree/main/Search/DFS)
